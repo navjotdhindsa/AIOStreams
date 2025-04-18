@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "apps/addon/src/index.ts", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "apps/addon/src/index.ts" }
+  ]
+}
